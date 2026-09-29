@@ -72,7 +72,7 @@ docker-compose up -d
 
 ### 5. 访问网页
 
-浏览器打开 <http://localhost:8080。>
+浏览器打开 <http://localhost:8080>
 
 连接 Neo4j：
 
