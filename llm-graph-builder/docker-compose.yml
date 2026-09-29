@@ -34,4 +34,4 @@ services:
 networks:
   net:
     external: true
-    name: part1-neo4j_net
+    name: neo4j_net
