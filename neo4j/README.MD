@@ -11,8 +11,8 @@
 ### 1. 克隆仓库
 
 ```bash
-git clone https://github.com/mok712/hpv-vax-kg.git
-cd hpv-vax-kg/neo4j
+git clone https://github.com/mok712/HPV-VaxKG.git
+cd HPV-VaxKG/neo4j
 ```
 
 ### 2. 启动 Neo4j
