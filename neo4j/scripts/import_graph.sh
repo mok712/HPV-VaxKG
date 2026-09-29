@@ -8,7 +8,7 @@ IMPORT_FILE="hpv_vax_kg.cypher"
 
 echo "正在导入图谱数据..."
 
-docker exec -it $NEO4J_CONTAINER cypher-shell -u $NEO4J_USER -p $NEO4J_PASSWORD \
+docker exec $NEO4J_CONTAINER cypher-shell -u $NEO4J_USER -p $NEO4J_PASSWORD \
   -f /var/lib/neo4j/import/$IMPORT_FILE
 
 echo "导入完成！"
