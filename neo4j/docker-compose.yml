@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+  neo4j:
+    image: neo4j:5-community
+    container_name: neo4j
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    environment:
+      - NEO4J_AUTH=neo4j/password
+      - NEO4J_PLUGINS=["apoc"]
+      - NEO4J_apoc_export_file_enabled=true
+      - NEO4J_apoc_import_file_enabled=true
+    volumes:
+      - neo4j_data:/data
+      - ./data:/var/lib/neo4j/import
+    networks:
+      - net
+
+volumes:
+  neo4j_data:
+
+networks:
+  net:
