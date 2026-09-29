@@ -30,7 +30,7 @@ bash scripts/import_graph.sh
 ### 4. 查看图谱
 
 浏览器打开 <http://localhost:7475>
-
+- Connection URL: localhost:7688
 - Username: neo4j
 - Password: password
 
