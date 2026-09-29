@@ -11,7 +11,7 @@
 ### 1. 克隆仓库
 
 ```bash
-git clone https://github.com/你的用户名/hpv-vax-kg.git
+git clone https://github.com/mok712/hpv-vax-kg.git
 cd hpv-vax-kg/neo4j
 ```
 
@@ -37,7 +37,7 @@ bash scripts/import_graph.sh
 登录后，在查询框里输入：
 
 ```cypher
-MATCH (n)-[r]->(m) RETURN n, r, m LIMIT 100
+MATCH (n)-[r]->(m) RETURN n, r, m LIMIT 1000
 ```
 
 就能看到完整的图谱。
